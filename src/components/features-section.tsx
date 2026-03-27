@@ -3,40 +3,40 @@ import { Badge } from "@/components/ui/badge"
 
 const features = [
   {
-    title: "Адаптивная нейрообработка",
-    description: "Самооптимизирующиеся алгоритмы, которые обучаются на нейронных паттернах и улучшают интерпретацию сигналов.",
+    title: "Мгновенные сообщения",
+    description: "Отправляй текст, фото, голосовые и видео-сообщения в секунды. Никаких задержек — как живой разговор.",
     icon: "brain",
-    badge: "ИИ",
+    badge: "Быстро",
   },
   {
-    title: "Медицинская защита",
-    description: "Шифрование по стандартам FDA со сквозной защитой конфиденциальных нейронных данных.",
+    title: "Сквозное шифрование",
+    description: "Все переписки защищены end-to-end шифрованием. Только вы и ваш собеседник видите сообщения.",
     icon: "lock",
-    badge: "Сертификат",
+    badge: "Безопасно",
   },
   {
-    title: "Интуитивное управление",
-    description: "Естественная трансляция мыслей в действия с откликом менее миллисекунды и точностью 99,7%.",
+    title: "Групповые чаты",
+    description: "Создавай группы для семьи, друзей или команды. До 1000 участников в одном чате.",
     icon: "globe",
-    badge: "Точность",
+    badge: "Вместе",
   },
   {
-    title: "Предиктивная калибровка",
-    description: "ML-модели, которые предугадывают намерения пользователя и оптимизируют нейронные пути.",
+    title: "Голосовые и видеозвонки",
+    description: "Кристально чистый звук и видео даже при слабом интернете. Звони бесплатно по всему миру.",
     icon: "zap",
-    badge: "Умный",
+    badge: "HD-качество",
   },
   {
-    title: "Биометрическая интеграция",
-    description: "Бесшовная синхронизация с мониторингом жизненных показателей для контроля здоровья.",
+    title: "Синхронизация устройств",
+    description: "Переписка доступна на телефоне, планшете и компьютере одновременно. Никогда не потеряешь историю.",
     icon: "link",
-    badge: "Связь",
+    badge: "Везде",
   },
   {
-    title: "Поддержка XR",
-    description: "Нативная совместимость с AR/VR-средами для терапевтических и рабочих приложений.",
+    title: "Статусы и истории",
+    description: "Делись моментами своей жизни через истории, которые исчезают через 24 часа.",
     icon: "target",
-    badge: "XR Ready",
+    badge: "Моменты",
   },
 ]
 
@@ -45,9 +45,9 @@ export function FeaturesSection() {
     <section className="py-24 px-6 bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Возможности нового поколения</h2>
+          <h2 className="text-4xl font-bold text-foreground mb-4 font-sans">Всё для живого общения</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Почувствуйте будущее с технологиями, которые переопределяют возможное
+            ChatConnect — это не просто мессенджер. Это пространство для тех, кто важен тебе
           </p>
         </div>
 
@@ -61,12 +61,12 @@ export function FeaturesSection() {
               <CardHeader>
                 <div className="flex items-center justify-between mb-2">
                   <span className="text-3xl">
-                    {feature.icon === "brain" && "&#129504;"}
+                    {feature.icon === "brain" && "&#128172;"}
                     {feature.icon === "lock" && "&#128274;"}
                     {feature.icon === "globe" && "&#127760;"}
-                    {feature.icon === "zap" && "&#9889;"}
-                    {feature.icon === "link" && "&#128279;"}
-                    {feature.icon === "target" && "&#127919;"}
+                    {feature.icon === "zap" && "&#128222;"}
+                    {feature.icon === "link" && "&#128241;"}
+                    {feature.icon === "target" && "&#10024;"}
                   </span>
                   <Badge variant="secondary" className="bg-accent text-accent-foreground">
                     {feature.badge}
