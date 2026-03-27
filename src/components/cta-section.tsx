@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Icon from "@/components/ui/icon"
 
 export function CTASection() {
   return (
@@ -16,6 +17,7 @@ export function CTASection() {
                 size="lg"
                 className="bg-primary text-primary-foreground hover:bg-primary/90 pulse-button text-lg px-8 py-4"
               >
+                <Icon name="PlayCircle" size={20} className="mr-2" />
                 Скачать бесплатно
               </Button>
             </a>

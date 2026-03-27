@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
+import Icon from "@/components/ui/icon"
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -37,7 +38,10 @@ export function Navbar() {
           {/* CTA Button */}
           <div className="hidden md:block">
             <a href="https://my.play/AuspiciousYak17244" target="_blank" rel="noopener noreferrer">
-              <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0">Скачать приложение</Button>
+              <Button className="bg-red-500 hover:bg-red-600 text-white font-geist border-0 flex items-center gap-2">
+                <Icon name="PlayCircle" size={16} />
+                Скачать приложение
+              </Button>
             </a>
           </div>
 
@@ -79,7 +83,8 @@ export function Navbar() {
               </a>
               <div className="px-3 py-2">
                 <a href="https://my.play/AuspiciousYak17244" target="_blank" rel="noopener noreferrer">
-                  <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0">
+                  <Button className="w-full bg-red-500 hover:bg-red-600 text-white font-geist border-0 flex items-center justify-center gap-2">
+                    <Icon name="PlayCircle" size={16} />
                     Скачать приложение
                   </Button>
                 </a>
